@@ -19,7 +19,6 @@
     width: 20%;
   }
 }
-
 </style>
 
 <script>
@@ -34,14 +33,12 @@ export default {
   },
   methods: {
     onClick: function() {
-      console.log(this.searchStr)
       if (this.searchStr === '') {
           return
       }
       baseUrl = baseUrl + '&s=' + this.searchStr
       this.axios.get(baseUrl)
       .then(response => {
-          console.log(response)
           this.results = response.data.Search
       })
     }
