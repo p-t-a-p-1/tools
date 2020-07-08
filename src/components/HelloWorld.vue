@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <h2>{{ test }}</h2>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -35,9 +36,11 @@
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String
+    msg: String,
+    test: process.env.VUE_APP_MOVIE_API_URL
   }
 }
+console.log(process.env.VUE_APP_MOVIE_API_URL)
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
