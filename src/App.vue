@@ -22,6 +22,9 @@ body {
 }
 
 #app {
+  max-width: 980px;
+  margin: 0 auto;
+  margin-top: 150px;
   font-family: "Press Start 2P";
   text-align: center;
   color: #2c3e50;
