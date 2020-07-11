@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Movie from '../views/Movie.vue'
+import Chat from '../views/Chat.vue'
 
 Vue.use(VueRouter)
 
@@ -23,6 +24,11 @@ Vue.use(VueRouter)
     path: '/movie',
     name: 'movie',
     component: Movie
+  },
+  {
+    path: '/chat',
+    name: 'chat',
+    component: Chat
   },
 ]
 

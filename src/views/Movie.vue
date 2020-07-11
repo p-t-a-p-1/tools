@@ -62,5 +62,4 @@ export default {
     }
   }
 }
-Vue.use(MagicGrid)
 </script>
